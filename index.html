@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!-- SPDX-License-Identifier: CC-BY-3.0 -->
+<!-- Copyright (c) 2020 Benedikt Spranger -->
+<html>
+  <head>
+    <title>Boomerang</title>
+    <link rel="icon" type="image/svg+xml"
+	  href="images/boomerang.svg" sizes="any">
+    <meta charset="utf-8" />
+    <meta name="viewport"
+	  content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+	<div class="logo">
+	  <picture>
+	    <source srcset="images/boomerang.svg" type="image/svg+xml">
+	      <img src="images/boomerang.svg" alt="A boomerang." />
+	  </picture>
+	</div>
+	<div class="content">
+	  <div class="inner">
+	    <h1>Boomerang</h1>
+	    <p>Australian for remote control</p>
+	  </div>
+	</div>
+	<nav>
+	  <ul>
+	    <li><a href="#intro">Intro</a></li>
+	    <li><a href="#work">Work</a></li>
+	    <li><a href="#video">Video</a></li>
+	    <li><a href="#contact">Contact</a></li>
+	    <!--<li><a href="#elements">Elements</a></li>-->
+	  </ul>
+	</nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+	<!-- Intro -->
+	<article id="intro">
+	  <h2 class="major">Intro</h2>
+	  <span class="image main"><img src="images/pic01.svg" alt="" /></span>
+	  <p>
+	    In a 90s Fosters Beer Commercial a man is sitting in front of a
+	    TV. Another man throws a boomerang and hit the first man. Without
+	    any impulse the man switches the TV channel. The Claim:
+	    <q>Boomerang - Australian for remote control</q>
+	  </p>
+
+	  <p>
+	    <cite>Boomerang - Australian for remote control</cite> is a remote
+	    control operated by simple gestures. The primary goal was to do a
+	    tiny application in <a href="https://vuejs.org/">Vue</a> to get a
+	    first impression and help a friend at the same time.
+	  </p>
+	</article>
+
+	<!-- Work -->
+	<article id="work">
+	  <h2 class="major">Work</h2>
+	  <div id="app">
+	    <span>Device orientation events are {{doe}}</span>
+	    <h3>{{event}}</h3>
+            <div class="table-wrapper">
+	      <table>
+		<thead>
+		  <tr>
+		    <th>Angle</th>
+		    <th>Timestamp</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+		    <td>{{alpha.angle}}</td>
+		    <td>{{alpha.ts}}</td>
+		  </tr>
+		  <tr>
+		    <td>{{beta.angle}}</td>
+		    <td>{{beta.ts}}</td>
+		  </tr>
+		  <tr>
+		    <td>{{gamma.angle}}</td>
+		    <td>{{gamma.ts}}</td>
+		  </tr>
+		</tbody>
+		<tfoot>
+		  <tr>
+		    <th>{{message}}</th>
+		  </tr>
+		</tfoot>
+	    </table>
+	  </div>
+	</article>
+
+	<!-- Video -->
+	<article id="video">
+	  <h2 class="major">Video</h2>
+	  <video class="image main" id="videoplayer"
+		 data-setup="{}" preload="auto"
+		 poster="https://storage.googleapis.com/55f344892beb3300251b016a/_%2F7686012f7e4346a895d25a71ace1ca12-l.jpg?GoogleAccessId=956532172770-27ie9eb8e4u326l89p7b113gcb04cdgd%40developer.gserviceaccount.com&amp;Expires=1593181556&amp;Signature=sOVRA2SO3lrn%2B3b%2BqGUjxW3gvw0tg1wKjXpXOrVvcerDkyProUkeDUzrzCx7fgO0QozypLrZeabKtlAOJ85E5ARW7YJXGrznzrfXU5YSVrrTuMZvGksDK%2BVUbstubY%2FPUEUCyMx12hn2TlFao%2BQmneYskonDptHh3FLuiwHYcLIG4CF%2FG2hOsEOAHMtXTpaZeYenI9dma%2FG8Zbmn5Hte3XB9ERWBPb%2BapfKe4pLHCWnB4Iq0popprjbCCiK8NJzVLMHCmNPnTHho1n1IMc1s2PtHhG1Jc3CZeZBYNt3EcTDIN%2BDxiXK6rwCvoxRuNwaw58m2eqH0hfwx6mfHPsofFA%3D%3D" tabindex="-1" src="https://storage.googleapis.com/55f344892beb3300251b016a/_%2F0d4beb382f57cec10fa3e54c13c5c02e24e53f02.mp4?GoogleAccessId=956532172770-27ie9eb8e4u326l89p7b113gcb04cdgd%40developer.gserviceaccount.com&amp;Expires=1593171912&amp;Signature=rzA45dr970s3EVlZNR4DPLMIsb7uJYw2W%2BtCWryN3iZkkcdEebUHwllnav51SLlMaHSrh2NOfc0Qm8obz3ObCqdGIpkRF8ctA8F%2FDI8h4ZWMLqTBf0w9S1c9wofmXAuFg5PMPen8ukwynIcSKTMhtcasJpz53NYFXmlKLn9t7a49SVTDAubCmt%2FZ3i5eH9iRkqcgkBY9edNwby%2Fu4tM9u%2FXqgAKHDOI2sMy7iEE%2F16DcvYRS3mb3D9A%2BfeMWgjaB5%2BdSZBSmwD%2Bhw4wJe%2F2VuhzTHb0mevQSrltyMtLCglCXh0%2BJpQzPgbvtaWGTzqG9W3ZIzorhPyHTpETMaGX7uA%3D%3D">
+	    <source src="https://storage.googleapis.com/55f344892beb3300251b016a/_%2F0d4beb382f57cec10fa3e54c13c5c02e24e53f02.mp4?GoogleAccessId=956532172770-27ie9eb8e4u326l89p7b113gcb04cdgd%40developer.gserviceaccount.com&amp;Expires=1593171912&amp;Signature=rzA45dr970s3EVlZNR4DPLMIsb7uJYw2W%2BtCWryN3iZkkcdEebUHwllnav51SLlMaHSrh2NOfc0Qm8obz3ObCqdGIpkRF8ctA8F%2FDI8h4ZWMLqTBf0w9S1c9wofmXAuFg5PMPen8ukwynIcSKTMhtcasJpz53NYFXmlKLn9t7a49SVTDAubCmt%2FZ3i5eH9iRkqcgkBY9edNwby%2Fu4tM9u%2FXqgAKHDOI2sMy7iEE%2F16DcvYRS3mb3D9A%2BfeMWgjaB5%2BdSZBSmwD%2Bhw4wJe%2F2VuhzTHb0mevQSrltyMtLCglCXh0%2BJpQzPgbvtaWGTzqG9W3ZIzorhPyHTpETMaGX7uA%3D%3D"
+		    type="video/mp4" />
+	    <p>To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank" hidden="hidden">supports HTML5 video</a>
+	    </p>
+	  </video>
+	</article>
+
+	<!-- Contact -->
+	<article id="contact">
+	  <h2 class="major">Impressum</h2>
+	  <div class="fields">
+            <div class="field">Benedikt Spranger</div>
+	    <div class="field">Untere Weitfeldstraße 8</div>
+	    <div class="field">88690 Uhldingen-Mühlhofen</div>
+	    <div class="field icon fa-phone">+49 75 56 2 59 99 21</div>
+	    <div class="field icon fa-envelope">info@eurovibes.org</div>
+	  </div>
+	  <p>Wir nehmen nicht an einem Streitbeilegungsverfahren vor einer
+	    Verbraucherschlichtungsstelle teil.</p>
+	  <ul class="icons">
+	    <li><a href="https://github.com/eurovibes/boomerang" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+	  </ul>
+	</article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+	<p class="copyright">&copy; 2020 Benedikt Spranger. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+      </footer>
+
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+    <script type="module" src="assets/js/boomerang.min.js"></script>
+
+  </body>
+</html>
